@@ -1,37 +1,34 @@
-# Projeto: Tratamento de Erros — Clean Code
+# Projeto: Registro de Logs em Arquivo — Clean Code
 
-Este projeto demonstra boas práticas de tratamento de erros em Java, com base nos princípios do Clean Code. A classe  foi revisada para remover abordagens inadequadas e manter apenas métodos que utilizam exceções de forma clara, contextual e segura.
+Este projeto demonstra como configurar corretamente o sistema de logging em Java utilizando a API . A classe  foi corrigida para seguir as convenções de nomenclatura e boas práticas de tratamento de exceções.
 
 ## 📄 Arquivo principal
 
-- : contém exemplos de tratamento de erros com uso adequado de exceções, evitando códigos de erro e valores nulos.
+- : classe que registra mensagens de log em um arquivo chamado .
 
-## 🎯 Princípios aplicados
+## 🎯 Correções aplicadas
 
-- ✅ **Use exceções ao invés de códigos de erro**  
-  Evita o uso de flags como  ou , que dificultam a manutenção e leitura.
-
-- ✅ **Lance exceções com contexto útil**  
-  Mensagens de erro informam claramente o motivo e o valor envolvido, como no caso de .
-
-- ✅ **Evite retornar ou passar **  
-  O código evita o uso de  como resposta para erros, preferindo lançar exceções.
+- ✅ **Uso correto da instância **:  em vez de 
+- ✅ **Tratamento de exceções com ** para 
+- ✅ **Nomes de variáveis e classes em conformidade com as convenções Java**
+- ✅ **Uso direto de  sem declarar variável desnecessária**
+- ✅ **Mensagens de log informativas e legíveis**
 
 ## 📁 Estrutura
 
 ```
-0x04/error/
-├── Error.java
+0x04/log/
+├── LoggerInFile.java
 └── README.md
 ```
 
 ## 📚 Referências
 
+- Documentação oficial do pacote 
 - Clean Code — Robert C. Martin
-- Effective Java — Joshua Bloch
-- Documentação oficial de exceções em Java
+- Oracle Java Naming Conventions
 
 ## 📌 Observações
 
-Este projeto faz parte do repositório [bradesco-hbtn-SOLID](https://github.com/seu-usuario/bradesco-hbtn-SOLID) e serve como base para estudos sobre tratamento de erros limpo, seguro e legível em Java.
+Este projeto faz parte do repositório [bradesco-hbtn-SOLID](https://github.com/seu-usuario/bradesco-hbtn-SOLID) e serve como exemplo prático de como registrar logs de forma limpa e estruturada em Java.
 
