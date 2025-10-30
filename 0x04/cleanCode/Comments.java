@@ -1,5 +1,7 @@
 public class Comments {
 
+    // Lançado sob os termos da GNU General Public License versão 2 ou posterior
+
     public Owner getTestcaseOwner(Testcase testcase) {}
 
     public Hours getHoursInQuarter() {}
