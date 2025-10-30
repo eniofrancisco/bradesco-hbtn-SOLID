@@ -1,40 +1,37 @@
-# Projeto: Comentários Limpos — Clean Code
+# Projeto: Tratamento de Erros — Clean Code
 
-Este projeto demonstra como aplicar boas práticas de comentários em Java, com base nos princípios do Clean Code. A classe  foi revisada para remover comentários desnecessários, redundantes ou excessivamente verbosos, mantendo apenas os que realmente agregam valor à compreensão do código.
+Este projeto demonstra boas práticas de tratamento de erros em Java, com base nos princípios do Clean Code. A classe  foi revisada para remover abordagens inadequadas e manter apenas métodos que utilizam exceções de forma clara, contextual e segura.
 
 ## 📄 Arquivo principal
 
-- : contém exemplos de comentários úteis (como TODO e JavaDoc) e mostra como evitar comentários que não contribuem para a legibilidade ou manutenção do código.
+- : contém exemplos de tratamento de erros com uso adequado de exceções, evitando códigos de erro e valores nulos.
 
 ## 🎯 Princípios aplicados
 
-- ✅ **Evitar comentários redundantes**  
-  Comentários que apenas repetem o que o código já expressa foram removidos.
+- ✅ **Use exceções ao invés de códigos de erro**  
+  Evita o uso de flags como  ou , que dificultam a manutenção e leitura.
 
-- ✅ **Remover código comentado sem propósito**  
-  Trechos de código desativado foram eliminados para manter o foco e a clareza.
+- ✅ **Lance exceções com contexto útil**  
+  Mensagens de erro informam claramente o motivo e o valor envolvido, como no caso de .
 
-- ✅ **Manter comentários úteis e objetivos**  
-  Comentários do tipo  e documentação JavaDoc foram preservados.
-
-- ✅ **Separar licenças e informações legais**  
-  Comentários de licença foram removidos do código-fonte e devem ser mantidos em arquivos apropriados como .
+- ✅ **Evite retornar ou passar **  
+  O código evita o uso de  como resposta para erros, preferindo lançar exceções.
 
 ## 📁 Estrutura
 
 ```
-0x04/cleanCode/
-├── Comments.java
+0x04/error/
+├── Error.java
 └── README.md
 ```
 
 ## 📚 Referências
 
 - Clean Code — Robert C. Martin
-- Convenções de comentários em Java
-- Documentação oficial do JavaDoc
+- Effective Java — Joshua Bloch
+- Documentação oficial de exceções em Java
 
 ## 📌 Observações
 
-Este projeto faz parte do repositório [bradesco-hbtn-SOLID](https://github.com/seu-usuario/bradesco-hbtn-SOLID) e serve como base para estudos sobre legibilidade, clareza e boas práticas na escrita de comentários em Java.
+Este projeto faz parte do repositório [bradesco-hbtn-SOLID](https://github.com/seu-usuario/bradesco-hbtn-SOLID) e serve como base para estudos sobre tratamento de erros limpo, seguro e legível em Java.
 
